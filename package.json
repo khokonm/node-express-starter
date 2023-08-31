@@ -1,0 +1,37 @@
+{
+  "name": "node-express-starter-template",
+  "version": "1.0.0",
+  "description": "A simple MVC starter template with node, express, sequelize and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/khokonm/node-express-starter.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "socket",
+    "starter",
+    "template"
+  ],
+  "author": "Khokon M. (khokon.dev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khokonm/node-express-starter/issues"
+  },
+  "homepage": "https://github.com/khokonm/node-express-starter#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.0",
+    "sequelize": "^6.32.1",
+    "socket.io": "^4.7.2"
+  }
+}
