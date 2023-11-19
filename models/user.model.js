@@ -26,7 +26,7 @@ module.exports = (sequelize, types) => {
 
             
 
-            account_statu: {
+            account_status: {
                 type: types.ENUM("pending", "active", "inactive", "banned"),
                 defaultValue: "active",
             },
