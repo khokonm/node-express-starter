@@ -1,6 +1,7 @@
 const express = require("express");
 const http = require("http");
 const { Server } = require("socket.io");
+const cookieParser = require('cookie-parser');
 const cors = require("cors");
 const formidable = require("express-formidable");
 const ejs = require("ejs");
@@ -12,6 +13,7 @@ const app = express();
 app.use("/media", express.static("public"));
 app.use(cors());
 app.use(formidable({ multiples: true }));
+app.use(cookieParser());
 
 
 // view config

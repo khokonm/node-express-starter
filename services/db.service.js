@@ -50,6 +50,26 @@ files.forEach((file) => {
 
 // ASSOCIATIONS
 
+// ASSOCIATIONS
+
+/**
+ * auth and user -> one to one
+ * each auth have only one user
+ * each user may have more than one auths
+ */
+db.auth.belongsTo(db.user, {
+    foreignKey: {
+      name: "user_id",
+    },
+  });
+  
+  db.user.hasMany(db.auth, {
+    foreignKey: {
+      name: "user_id",
+    },
+  });
+  
+
 
 
 module.exports = db;

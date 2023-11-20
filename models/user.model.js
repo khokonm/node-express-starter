@@ -10,12 +10,12 @@ module.exports = (sequelize, types) => {
             },
 
             username: {
-                type: types.INTEGER,
+                type: types.STRING,
                 allowNull: false,
             },
 
             email: {
-                type: types.INTEGER,
+                type: types.STRING,
                 allowNull: false,
             },
             
@@ -23,8 +23,6 @@ module.exports = (sequelize, types) => {
                 type: types.TEXT,
                 allowNull: false
             },
-
-            
 
             account_status: {
                 type: types.ENUM("pending", "active", "inactive", "banned"),
