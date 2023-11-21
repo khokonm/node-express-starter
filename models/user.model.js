@@ -10,12 +10,12 @@ module.exports = (sequelize, types) => {
             },
 
             username: {
-                type: types.INTEGER,
+                type: types.STRING,
                 allowNull: false,
             },
 
             email: {
-                type: types.INTEGER,
+                type: types.STRING,
                 allowNull: false,
             },
             
