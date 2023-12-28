@@ -5,6 +5,8 @@ const cors = require("cors");
 const formidable = require("express-formidable");
 const ejs = require("ejs");
 const path = require("path");
+const cookieParser = require('cookie-parser')
+const Session = require('./utils/session.util');
 
 const app = express();
 
@@ -18,6 +20,11 @@ app.use(formidable({ multiples: true }));
 app.engine(".html", ejs.renderFile);
 app.set("view engine", "html");
 app.set("views", path.join(__dirname, "views"));
+
+//Setup Sessions
+app.use(Session);
+// cookie parser
+app.use(cookieParser());
 
 const server = http.createServer(app);
 

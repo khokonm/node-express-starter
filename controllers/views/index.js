@@ -1,5 +1,6 @@
-const { Home } = require("./get.controllers");
+const { Home, Dashboard } = require("./get.controllers");
 
 module.exports = {
     Home,
+    Dashboard,
 }

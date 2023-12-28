@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Envato Credits</title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <div id="wrapper">
+        <form action="" method="post">
+            <h1><%= loginText %></h1>
+            <% if (locals.errors) { %>
+                <% for(var i=0; i < errors.length; i++) { %>
+                  <p class="alert alert-danger"><%= errors[i] %></p>
+               <% } %>
+              <% } %>
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="********">
+            <input type="submit" value="Login">
+            <div class="go_home_btn">
+                <a href="/auth/register">Register</a>
+            </div>
+            <div class="go_home_btn">or</div>
+            <div class="go_home_btn">
+                <a href="/">Go Home</a>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

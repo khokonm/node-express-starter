@@ -7,3 +7,11 @@ exports.Home = (req, res) => {
         serverError(res, 500, error.message);
     }
 }
+
+exports.Dashboard = (req, res) => {
+    try {
+        res.render("dashboard");
+    } catch (error) {
+        serverError(res, 500, error.message);
+    }
+}
